@@ -1,0 +1,383 @@
+.main-page {
+    overflow: hidden;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 1) 82%);
+    width: 100%;
+    min-width: 1280px;
+    min-height: 2706px;
+    position: relative;
+  }
+  
+  .main-page .ellipse {
+    position: absolute;
+    top: 1660px;
+    left: 570px;
+    width: 844px;
+    height: 652px;
+    border-radius: 421.92px / 325.79px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 255, 225, 0.5) 0%,
+      rgba(0, 255, 225, 0) 100%
+    );
+  }
+  
+  .main-page .div {
+    position: absolute;
+    top: 935px;
+    left: -137px;
+    width: 1034px;
+    height: 622px;
+    border-radius: 516.88px / 311.23px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 217, 0, 0.5) 0%,
+      rgba(255, 217, 0, 0) 100%
+    );
+  }
+  
+  .main-page .ellipse-2 {
+    position: absolute;
+    top: 175px;
+    left: 380px;
+    width: 1002px;
+    height: 780px;
+    border-radius: 500.93px / 390.07px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 204, 254, 1) 0%,
+      rgba(255, 204, 254, 0) 100%
+    );
+  }
+  
+  .main-page .frame {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    align-items: flex-start;
+    gap: 36px;
+    padding: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .main-page .frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .main-page .frame-3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .main-page .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "PolySans-Neutral", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .main-page .pink-outline {
+    position: relative;
+    width: 23.94px;
+    height: 24px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .main-page .p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 473.42px;
+    margin-top: -1px;
+    font-family: "PolySans-Slim", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .frame-4 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 35px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .main-page .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "PolySans-Slim", Helvetica;
+    font-weight: 400;
+    color: #f327af;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .main-page .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "PolySans-Slim", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .main-page .frame-5 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(17, minmax(0, 1fr));
+    width: 1208px;
+    height: 2494.33px;
+    gap: 23px 106px;
+  }
+  
+  .main-page .frame-6 {
+    position: relative;
+    grid-row: 11 / 12;
+    grid-column: 6 / 13;
+    width: 100%;
+    height: 419px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .rectangle {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+  }
+  
+  .main-page .frame-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .main-page .g-reme-national-park {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "PolySans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .span {
+    font-family: "PolySans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  
+  .main-page .text-wrapper-4 {
+    text-decoration: underline;
+  }
+  
+  .main-page .text-wrapper-5 {
+    position: relative;
+    align-self: stretch;
+    font-family: "PolySans-Slim", Helvetica;
+    font-weight: 400;
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .frame-8 {
+    grid-row: 1 / 6;
+    grid-column: 1 / 10;
+    align-self: start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .img {
+    height: 545.78px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .main-page .text-wrapper-6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "PolySans-Neutral", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .frame-9 {
+    grid-row: 12 / 17;
+    grid-column: 1 / 6;
+    justify-self: start;
+    align-self: start;
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .rectangle-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 424px;
+    height: 579.21px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .main-page .rectangle-2 {
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .main-page .frame-10 {
+    display: flex;
+    flex-direction: column;
+    width: 424px;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .main-page .frame-11 {
+    grid-row: 15 / 18;
+    grid-column: 7 / 13;
+    align-self: start;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .frame-12 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 327px;
+    background-image: url(./img/frame-13.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .main-page .frame-13 {
+    grid-row: 17 / 20;
+    grid-column: 2 / 7;
+    justify-self: start;
+    width: 424px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .rectangle-3 {
+    height: 279.72px;
+    object-fit: cover;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .main-page .frame-14 {
+    grid-row: 6 / 11;
+    grid-column: 3 / 13;
+    justify-self: end;
+    align-self: end;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .main-page .frame-15 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-image: url(./img/frame-14.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .main-page .congratulations-on {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-family: "PolySans-Slim", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
