@@ -1,0 +1,121 @@
+/* Styles specific to individual project sub-pages. Loaded after styles.css. */
+
+.project-page { align-items: stretch; }
+
+.header--project { margin-bottom: 72px; }
+.name-link { text-decoration: none; color: inherit; }
+
+.project-body {
+  width: 100%;
+  padding: 0 var(--gutter) 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+@media (min-width: 700px) {
+  .project-meta { flex-direction: row; justify-content: space-between; gap: 36px; }
+}
+
+.project-titleblock { display: flex; flex-direction: column; gap: 12px; }
+.project-titleblock h1 {
+  font-family: var(--font-neutral);
+  font-weight: 400;
+  font-size: 24px;
+}
+.project-tags { font-size: 12px; color: var(--muted); }
+
+.project-description {
+  font-size: 12px;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.project-pagination a:hover {color:var(--magenta);}
+
+.project-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-frame {
+  width: 100%;
+  aspect-ratio: 1208 / 752.6;
+  background: #000;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.hero-media { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.project-media-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.media-crop { position: relative; overflow: hidden; }
+.media-crop img { display: block; position: absolute; max-width: none; }
+
+.media-crop--screenshot { flex: 1 1 0; min-width: 0; aspect-ratio: 2775 / 1786; }
+.media-crop--screenshot img { inset: 0; width: 100%; height: 100%; object-fit: cover; position: static; }
+
+.media-crop--drawing { flex: 0 0 auto; width: 605.75px; max-width: 100%; height: 374px; }
+.media-crop--drawing img { inset: 0; width: 100%; height: 100%; object-fit: cover; position: static; }
+
+/* .prototypes is kept as a named alias of the generic .project-section below,
+   so the Paint like Pollock page keeps working unchanged. */
+.prototypes, .project-section { display: flex; flex-direction: column; gap: 24px; }
+.prototypes h2, .project-section > h2 { font-family: var(--font-neutral); font-weight: 400; font-size: 24px; }
+
+.prototype-row { display: flex; gap: 24px; }
+.media-crop--proto1 { flex: 1 1 0; min-width: 0; aspect-ratio: 634 / 464; }
+.media-crop--proto1 img { top: -2.59%; left: -1.42%; width: 110.57%; height: 117.67%; }
+
+.media-crop--proto2 { flex: 1 1 0; min-width: 0; aspect-ratio: 393.47 / 289.32; }
+.media-crop--proto2 img { top: 0; left: 0; width: 111.66%; height: 125.6%; }
+
+.media-crop--proto3 { width: 100%; aspect-ratio: 560.73 / 305.63; }
+.media-crop--proto3 img { top: -11.86%; left: -2.39%; width: 104.65%; height: 124.86%; }
+
+/* Generic row of media used across every project sub-page (hero pairs, mockups,
+   mobile screens, diagrams, etc). Geometry that's specific to one image (aspect
+   ratio, crop offsets) is set inline on that element, in keeping with the
+   pixel-precise values Figma exports. */
+.section-row { display: flex; gap: 24px; align-items: flex-start; width: 100%; }
+.section-row--flex > * { flex: 1 1 0; min-width: 0; }
+
+/* Stretch-height pairing (e.g. the two Marina Abramović posters). */
+.section-row--stretch { align-items: stretch; }
+.section-row--stretch > * { flex: 1 1 0; min-width: 0; }
+
+.placeholder-media {
+  width: 100%;
+  background: #ededed;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
+}
+
+@media (max-width: 700px) {
+  .project-media-row, .prototype-row { flex-direction: column; }
+  .media-crop--drawing { width: 100%; height: auto; aspect-ratio: 605.75 / 374; }
+  .section-row { flex-direction: column; }
+  .section-row > * { width: 100% !important; height: auto !important; }
+}

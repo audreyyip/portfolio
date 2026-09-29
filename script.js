@@ -29,3 +29,17 @@ document.querySelectorAll('.nav a').forEach((a) => {
     a.addEventListener('click', (e) => e.preventDefault());
   }
 });
+
+// If the browser can't play the hero video (or it's missing), fall back to the poster image.
+const hero = document.querySelector('.hero-media');
+if (hero) {
+  hero.addEventListener('error', () => {
+    const fallback = document.createElement('img');
+    fallback.src = hero.getAttribute('poster');
+    fallback.alt = '';
+    fallback.style.width = '100%';
+    fallback.style.height = '100%';
+    fallback.style.objectFit = 'cover';
+    hero.replaceWith(fallback);
+  }, true);
+}

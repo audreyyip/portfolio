@@ -1,12 +1,21 @@
 :root {
   --pink: #ffccfe;
+  --magenta: #f428b0;
   --text: #000;
   --muted: #898989;
+  --font-family: 'PolySans', sans-serif;
+  --font-slim: 300;     /* Use standard numerical values or keywords */
+  --font-neutral: 400;
   --gutter: 36px;
   --gap: 20px;
-  /* PolySans is the design font; swap in a @font-face if you have the files. */
-  --font-neutral: "PolySans", "Helvetica Neue", Arial, sans-serif;
-  --font-slim: "PolySans", "Helvetica Neue", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'PolySans';
+  src: url('fonts/PolySans-Neutral.otf') format('otf'),
+       url('fonts/PolySans-Slim.otf') format('otf');
+  font-style: normal;
+  font-display: swap;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -16,8 +25,9 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--text);
-  font-family: var(--font-slim);
+  font-family: var(--font-family);
   background: linear-gradient(to bottom, var(--pink) 0%, #fff 43.924%) no-repeat;
+  font-weight:var(--font-slim);
   background-color: #fff;
   min-height: 100vh;
 }
@@ -41,17 +51,17 @@ p, h1, h2 { margin: 0; }
   width: 100%;
   padding: var(--gutter);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 276px;
 }
 .brand { display: flex; align-items: center; gap: 16px; }
-.name { font-family: var(--font-neutral); font-size: 24px; white-space: nowrap; }
+.name { font-family: var(--font-family); font-size: 24px; white-space: nowrap; }
 .logo { width: 24px; height: 24px; object-fit: cover; }
 .intro { font-size: 14px; width: 473px; max-width: 100%; }
 .nav { display: flex; gap: 35px; font-size: 16px; }
-.nav a:hover { text-decoration: underline; }
+.nav a:hover {color:var(--magenta);}
 
 /* Grid */
 .grid {
@@ -64,27 +74,29 @@ p, h1, h2 { margin: 0; }
 .column { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
 
 .project { display: flex; flex-direction: column; gap: 16px; }
+.project-link { display: flex; flex-direction: column; gap: 16px; color: inherit; text-decoration: none; }
+.project-link:hover .caption h2, .caption p {color:var(--magenta);}
 .project--fill { height: 576px; }
 
 .media { display: block; width: 100%; }
 .media--cover { object-fit: cover; }
 .media--contain { object-fit: contain; }
 .media--ratio { aspect-ratio: 2890 / 1784; object-fit: cover; }
-.media--marina { height: 584px; }
+/* .media--marina { height: 584px; }
 .media--women { height: 235px; }
 .media--weaving { height: 280px; }
 .media--insect { height: 259px; }
-.media--goreme { height: 241px; }
-.media--fill { flex: 1 1 0; min-height: 0; }
+.media--goreme { height: 241px; } */
+.media--fill { flex: 1 1 0; object-fit: cover; }
 
 .caption { display: flex; flex-direction: column; gap: 4px; }
-.caption h2 { font-family: var(--font-neutral); font-weight: 400; font-size: 14px; }
+.caption h2 { font-family: var(--font-family); font-weight: var(--font-neutral); font-size: 14px; }
 .caption p { font-size: 12px; color: var(--muted); }
 
 /* Footer */
 .footer {
   width: min(1210px, calc(100% - 2 * var(--gutter)));
-  margin-top: 120px;
+  margin-top: 60px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;

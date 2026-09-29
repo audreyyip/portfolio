@@ -1,100 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paint like Pollock — Audrey Yip</title>
-<link rel="stylesheet" href="/globals.css">
-<link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paint like Pollock — audrey yip</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../project.css">
 </head>
 <body>
-<div class="sub-page">
-<div class="frame">
-<header class="div">
-<div class="div-wrapper">
-<a class="text-wrapper" href="/" aria-label="Audrey Yip home">audrey yip</a>
-</div>
-<nav class="frame-2" aria-label="Primary navigation">
-<a class="text-wrapper" href="#work">work</a>
-<a class="text-wrapper" href="#about">about</a>
-<a class="text-wrapper" href="#playground">playground</a>
-</nav>
-</header>
-<main id="work" class="frame-3">
-<section class="frame-4" aria-labelledby="project-title">
-<div class="frame-5">
-<h1 id="project-title" class="text-wrapper-2">Paint like Pollock</h1>
-<p class="p">Creative coding, interactive tools, interface design</p>
-</div>
-<p class="an-interactive">
-An interactive webpage using p5.js and the ml5.js library that allows its users to create illustrations by tracking different parts of their face. The user can adjust the brush size by opening and closing their mouth, and moving the brush by moving their head around.
-            <br>
-<br>
-Created under Clinton Van Anarm.
-          </p>
-</section>
-<section class="frame-wrapper" aria-label="Interactive Paint like Pollock artwork">
-<div class="frame-6">
-<div
-              class="paint-like-pollock"
-              role="img"
-              aria-label="Interactive facial movement drawing experience"
-            ></div>
-</div>
-</section>
-<section id="about" class="frame-7" aria-labelledby="project-description">
-<div class="frame-8">
-<h2 id="project-description" class="text-wrapper-3">
-Facial movements as a form of creation, imagining alternate ways of illustration.
-            </h2>
-<div class="frame-9">
-<section class="frame-10" aria-labelledby="process-heading">
-<h3 id="process-heading" class="text-wrapper-4">Process</h3>
-<p class="text-wrapper-5">
-Initially, I experimented with how blinking can be used as a mechanism to start and stop drawing. I created a very basic prototype, but soon it was clear that it was finicky and very difficult to use.
-                  <br>
-<br>
-The facial recognition software couldn’t always pick up on the user blinking, especially when their head would be moving around in different angles, and that meant the user had very little control over the software and how the final drawing would appear.
-                </p>
-</section>
-<p class="text-wrapper-5">
-From the first prototype, I felt that it was a little difficult to see where I was drawing on as the frame begins to be filled with brush strokes. I wanted to see if a separate canvas and camera screen would be easier to use, as it would allow the user to see themselves and the drawing clearly.
-              </p>
-</div>
-</div>
-<div class="frame-11" aria-label="Project process screenshots">
-<div class="frame-12">
-<div class="frame-6">
-<img
-                  class="screenshot"
-                  src="img/screenshot-2026-04-20-at-3-02-52-PM-1.png"
-                  alt="Interactive drawing prototype showing facial movement brush strokes"
-                  decoding="async"
-                  loading="lazy"
-                >
-</div>
-<img
-                class="img"
-                src="img/screenshot-2026-04-20-at-3-02-40-PM-1.png"
-                alt="Prototype camera view with facial movement illustrations"
-                decoding="async"
-                loading="lazy"
-              >
-</div>
-<div class="frame-10">
-<img
-                class="screenshot-2"
-                src="img/screenshot-2026-04-21-at-2-04-28-AM-1.png"
-                alt="Expanded drawing prototype interface with camera and canvas views"
-                decoding="async"
-                loading="lazy"
-              >
-</div>
-</div>
-</section>
-</main>
-<section id="playground" aria-label="Playground"></section>
-</div>
-</div>
+  <div class="page project-page">
+    <header class="header header--project">
+      <div class="brand">
+        <a href="../index.html" class="name-link">
+          <p class="name">audrey yip</p>
+        </a>
+        <img class="logo" src="../imgs/logo.svg" alt="">
+      </div>
+      <nav class="nav">
+        <a href="#about">about</a>
+        <a href="#play">play</a>
+      </nav>
+    </header>
+
+    <main class="project-body">
+      <div class="project-meta">
+        <div class="project-titleblock">
+          <h1>Paint like Pollock</h1>
+          <p class="project-tags">Creative coding, interactive tools, interface design</p>
+        </div>
+        <div class="project-description">
+          <p>An interactive webpage using p5.js and the ml5.js library that allows its users to create illustrations by tracking different parts of their face. The user can adjust the brush size by opening and closing their mouth, and moving the brush by moving their head around.</p>
+          <p>Created under Clinton Van Anarm.</p>
+        </div>
+      </div>
+
+      <nav class="project-pagination">
+        <a href="labour.html" class="prev">← Previous Project</a>
+        <a href="womeninchineseart.html" class="next">Next Project →</a>
+      </nav>
+
+      <section class="project-hero">
+        <div class="hero-frame">
+          <video class="hero-media" src="../assets/paint-like-pollock-hero.mp4" poster="../assets/paint-like-pollock.png" controls muted playsinline></video>
+        </div>
+        <div class="project-media-row">
+          <div class="media-crop media-crop--screenshot">
+            <img src="../assets/paint-like-pollock-screenshot.png" alt="Screenshot of the Paint like Pollock interface">
+          </div>
+          <div class="media-crop media-crop--drawing">
+            <img src="../assets/paint-like-pollock-drawing.png" alt="Drawing created with Paint like Pollock">
+          </div>
+        </div>
+      </section>
+
+      <section class="prototypes">
+        <h2>Prototypes</h2>
+        <div class="prototype-row">
+          <div class="media-crop media-crop--proto1">
+            <img src="../assets/prototype-1.png" alt="Early prototype screenshot 1">
+          </div>
+          <div class="media-crop media-crop--proto2">
+            <img src="../assets/prototype-2.png" alt="Early prototype screenshot 2">
+          </div>
+        </div>
+        <div class="media-crop media-crop--proto3">
+          <img src="../assets/prototype-3.png" alt="Early prototype screenshot 3">
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../script.js"></script>
 </body>
 </html>
