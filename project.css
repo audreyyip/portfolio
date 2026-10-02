@@ -1,4 +1,7 @@
 /* Styles specific to individual project sub-pages. Loaded after styles.css. */
+*{
+  background-color: ghostwhite;
+}
 
 .project-page { align-items: stretch; }
 
@@ -53,7 +56,6 @@
 
 .hero-frame {
   width: 100%;
-  aspect-ratio: 1208 / 752.6;
   background: #000;
   border-radius: 2px;
   overflow: hidden;
@@ -65,14 +67,11 @@
   gap: 24px;
   align-items: flex-start;
 }
-.media-crop { position: relative; overflow: hidden; }
-.media-crop img { display: block; position: absolute; max-width: none; }
+.media-crop { position: relative; overflow: hidden; width: 100%;}
+.media-crop img { display: block; object-fit: cover; max-width: none; }
 
-.media-crop--screenshot { flex: 1 1 0; min-width: 0; aspect-ratio: 2775 / 1786; }
-.media-crop--screenshot img { inset: 0; width: 100%; height: 100%; object-fit: cover; position: static; }
-
-.media-crop--drawing { flex: 0 0 auto; width: 605.75px; max-width: 100%; height: 374px; }
-.media-crop--drawing img { inset: 0; width: 100%; height: 100%; object-fit: cover; position: static; }
+.media-crop--half { flex: 1 1 0;width: 100%; aspect-ratio: 2775 / 1786; }
+.media-crop--half img { inset: 0; width: 100%; height: 100%; object-fit: cover; position: static; }
 
 /* .prototypes is kept as a named alias of the generic .project-section below,
    so the Paint like Pollock page keeps working unchanged. */
@@ -80,14 +79,11 @@
 .prototypes h2, .project-section > h2 { font-family: var(--font-neutral); font-weight: 400; font-size: 24px; }
 
 .prototype-row { display: flex; gap: 24px; }
-.media-crop--proto1 { flex: 1 1 0; min-width: 0; aspect-ratio: 634 / 464; }
-.media-crop--proto1 img { top: -2.59%; left: -1.42%; width: 110.57%; height: 117.67%; }
+.media-crop--proto1 { flex: 1 1 0; min-width: 0;}
+.media-crop--proto1 img { top: -2.59%; left: -1.42%; width: 100%;}
 
-.media-crop--proto2 { flex: 1 1 0; min-width: 0; aspect-ratio: 393.47 / 289.32; }
-.media-crop--proto2 img { top: 0; left: 0; width: 111.66%; height: 125.6%; }
-
-.media-crop--proto3 { width: 100%; aspect-ratio: 560.73 / 305.63; }
-.media-crop--proto3 img { top: -11.86%; left: -2.39%; width: 104.65%; height: 124.86%; }
+.media-crop--proto3 { width: 100%;}
+.media-crop--proto3 img { top: -11.86%; left: -2.39%; width: 100%; }
 
 /* Generic row of media used across every project sub-page (hero pairs, mockups,
    mobile screens, diagrams, etc). Geometry that's specific to one image (aspect
@@ -116,6 +112,6 @@
 @media (max-width: 700px) {
   .project-media-row, .prototype-row { flex-direction: column; }
   .media-crop--drawing { width: 100%; height: auto; aspect-ratio: 605.75 / 374; }
-  .section-row { flex-direction: column; }
+  .section-row { flex-direction: column; height:auto;}
   .section-row > * { width: 100% !important; height: auto !important; }
 }
