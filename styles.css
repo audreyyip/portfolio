@@ -38,7 +38,7 @@ p, h1, h2 { margin: 0; }
 
 .page {
   max-width: 100%;
-  margin: 0 auto;
+  padding: var(--gutter);
   min-height: 1465px;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,6 @@ p, h1, h2 { margin: 0; }
 /* Header */
 .header {
   width: 100%;
-  padding: var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +66,6 @@ p, h1, h2 { margin: 0; }
 /* Grid */
 .grid {
   width: 100%;
-  padding: 0 var(--gutter);
   display: flex;
   align-items: flex-start;
   gap: var(--gap);
@@ -91,7 +89,7 @@ p, h1, h2 { margin: 0; }
 
 /* Footer */
 .footer {
-  width: min(1210px, calc(100% - 2 * var(--gutter)));
+  width: 100%;
   margin-top: 120px;
   margin-bottom: 30px;
   display: flex;
