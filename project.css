@@ -19,7 +19,7 @@
 .project-meta {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 24px;
 }
 @media (min-width: 700px) {
   .project-meta { flex-direction: row; justify-content: space-between; gap: 36px; }
@@ -35,7 +35,7 @@
 
 .project-description {
   font-size: 14px;
-  max-width: 620px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -54,6 +54,7 @@
 .project-pagination a:hover {color:var(--magenta);}
 
 .project-hero {
+  width:100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -68,6 +69,7 @@
 .hero-media { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .project-media-row {
+  width:100%;
   display: flex;
   gap: 24px;
   align-items: flex-start;
@@ -84,11 +86,11 @@
 .prototypes h2, .project-section > h2 { font-family: var(--font-neutral); font-weight: 400; font-size: 24px; }
 
 .prototype-row { display: flex; gap: 24px; }
-.media-crop--proto1 { flex: 1 1 0; min-width: 0;}
-.media-crop--proto1 img { top: -2.59%; left: -1.42%; width: 100%;}
+.media-crop--flex { flex: 1 1 0; min-width: 0;}
+.media-crop--flex img { top: -2.59%; left: -1.42%; width: 100%;}
 
-.media-crop--proto3 { width: 100%;}
-.media-crop--proto3 img { top: -11.86%; left: -2.39%; width: 100%; }
+.media-crop--full { width: 100%;}
+.media-crop--full img { width: 100%;}
 
 /* Generic row of media used across every project sub-page (hero pairs, mockups,
    mobile screens, diagrams, etc). Geometry that's specific to one image (aspect

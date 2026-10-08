@@ -55,17 +55,42 @@
         </div>
       </section>
 
-      <section class="prototypes">
-        <h2>Prototypes</h2>
+      <section class="project-media-row">
         <div class="project-description">
-          <p>An interactive webpage using p5.js and the ml5.js library that allows its users to create illustrations by tracking different parts of their face. The user can adjust the brush size by opening and closing their mouth, and moving the brush by moving their head around. The intended usage of the tool was for play and experimentation, encouraging the user to explore the ways physical motion can be translated into a digital illustration.</p>
+          <h2>Question</h2>
+          <h3>How can we use facial movements as a form of creation and reimagine alternate ways of illustration? </h3>
+        </div>
+        <div class="project-description">
+          <h2>Answer</h2>
+          <h3>Movements in the face that correspond to different brush sizes and drawing techniques. </h3>
+        </div>
+      </section>
+
+      <section class="prototypes">
+        <h2>Initial Prototypes</h2>
+        <div class="project-media-row">
+        <div class="project-description">
+          <h3> Experimenting with blinking</h3>
+            <p>I originally experimented with how blinking can be used as a mechanism to start and stop drawing. I created a very basic prototype, but soon it was clear that it was finicky and very difficult to use.
+  <br><br>
+  The facial recognition software couldn’t always pick up on the user blinking, especially when their head would be moving around in different angles, and that meant the user had very little control over the software and how the final drawing would appear. I decided to experiment with using the mouth as the main controller of brush size, given that there was a larger variation in the mouth size which the computer would easily pick up on.
+  <br><br>
+          </p>
+          </div>
+        <div class="project-description">
+          <h3> Layout considerations</h3>
+          <p>
+  From the first prototype, I felt that it was a little difficult to see where I was drawing on as the frame begins to be filled with brush strokes. I wanted to see if a separate canvas and camera screen would be easier to use, as it would allow the user to see themselves and the drawing clearly. 
+  <br><br>
+  I tried different layouts for how the drawing would appear on screen, including one where the camera and drawing were side by side on the screen. From user feedback, it turned out that the original layout where the drawing was overlayed on top of the camera was the most intuitive, and that a more straightforward solution to the problem would be to include a function where the user can turn their camera on and off. </p>
+          </div>
         </div>
         <div class="prototype-row">
-          <div class="media-crop media-crop--proto1">
+          <div class="media-crop media-crop--full">
             <img src="../imgs/paintlikepollock/prototype_1.png" alt="Early prototype screenshot 1">
           </div>
         </div>
-        <div class="media-crop media-crop--proto3">
+        <div class="media-crop media-crop--full">
           <img src="../imgs/paintlikepollock/prototype_3.png" alt="Early prototype screenshot 3">
         </div>
       </section>

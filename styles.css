@@ -34,7 +34,19 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
-p, h1, h2 { margin: 0; }
+p, h1, h2, h3 { margin: 0; line-height: 1.2;}
+
+h2{
+  font-size: 24px;
+  font-weight: var(--font-neutral);
+  color: var(--text);
+}
+
+h3{
+  font-size: 18px;
+  font-weight: var(--font-slim);
+  color: var(--text);
+}
 
 .page {
   max-width: 100%;
