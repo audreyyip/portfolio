@@ -19,6 +19,11 @@ body { background: ghostwhite; }
   flex-direction: column;
   gap: 24px;
 }
+
+.project-meta > div {
+  flex: 50%;
+}
+
 @media (min-width: 700px) {
   .project-meta { flex-direction: row; justify-content: space-between; gap: 36px; }
 }
