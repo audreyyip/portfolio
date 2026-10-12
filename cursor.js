@@ -83,6 +83,7 @@
     last = { x, y };
   });
 
+
   // Don't draw a straight line from where the mouse left to where it re-enters.
   document.addEventListener('mouseleave', () => {
     last = null;
