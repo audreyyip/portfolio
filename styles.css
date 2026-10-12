@@ -92,10 +92,10 @@ h3{
 
 .media { 
   display: block; 
-  height: 400px;
   width: 100%; }
 .media--cover { object-fit: cover; }
 .media--contain { object-fit: contain; }
+.media--home{height: 400px; object-fit: cover;}
 .media--ratio { aspect-ratio: 2890 / 1784; object-fit: cover; }
 .media--fill { flex: 1 1 0; object-fit: cover; }
 
